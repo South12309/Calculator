@@ -25,7 +25,7 @@ public class MyWindow extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 calculator.reset();
                 field.setText("");
-                textNeedStart=true;
+                textNeedStart = true;
             }
         });
         add(clearButton, BorderLayout.SOUTH);
@@ -166,9 +166,8 @@ public class MyWindow extends JFrame {
     private void printToField(JTextField field, String simbol) {
         if (textNeedStart) {
             field.setText(simbol);
-            textNeedStart=false;
-        }
-        else
+            textNeedStart = false;
+        } else
             field.setText(field.getText() + simbol);
     }
 

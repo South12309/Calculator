@@ -21,13 +21,13 @@ public class Calculator {
     }
 
     public float result() {
-        if (operation==Operation.SUM)
+        if (operation == Operation.SUM)
             return sum();
-        else if (operation==Operation.MINUS)
+        else if (operation == Operation.MINUS)
             return minus();
-        else if (operation==Operation.DIVIDE)
+        else if (operation == Operation.DIVIDE)
             return divide();
-       else
+        else
             return multiply();
 
     }
@@ -37,8 +37,8 @@ public class Calculator {
     }
 
     public void reset() {
-        firstOperand=0;
-        secondOperand=0;
+        firstOperand = 0;
+        secondOperand = 0;
     }
 
     public void setOperation(Operation operation) {
@@ -62,18 +62,15 @@ public class Calculator {
     }
 
 
-
     public boolean setOperand(Float operand) {
 
-        if (firstOperand==0) {
+        if (firstOperand == 0) {
             firstOperand = operand;
             return true;
-        }
-        else if (secondOperand==0) {
-            secondOperand=operand;
+        } else if (secondOperand == 0) {
+            secondOperand = operand;
             return true;
-        }
-        else return false;
+        } else return false;
 
 
     }
